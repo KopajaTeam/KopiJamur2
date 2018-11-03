@@ -29,10 +29,12 @@ class K_jamur extends CI_Model
 		return $this->db->get_where($table,$where);
 	}
 
-	public function detailforum(){
-//ambil data FORUM dari table forum
-		$forum = $this->db->get('forum');
-		return $forum;
+	public function detailforum($id_forum){
+		//ambil data FORUM dari table forum
+		$this->db->where('id_forum', $id_forum);
+		$this->db->join('user','forum.id_user = user.id_user', "LEFT");
+		$this->db->join('kategori_forum','forum.id_kategori_forum = kategori_forum.id_kategori_forum', "LEFT");
+		return $this->db->get('forum');
 	}
 }
 ?>

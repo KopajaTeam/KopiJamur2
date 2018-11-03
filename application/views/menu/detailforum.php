@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</div>
 									<div class="entry-content-wrapper">
 										<header class="entry-header">
-											<h2 class="entry-title"><a href="#" rel="bookmark"><?php echo "judul"; ?></a></h2>
+											<h2 class="entry-title"><a href="#" rel="bookmark"><?php echo $forum->judul; ?></a></h2>
 										</header><!-- .entry-header -->
 										<div class="entry-meta">
 											<span class="posted-on"><a href="#" rel="bookmark"><span class="entry-date published updated"><?php echo "Tanggal"; ?></span></a>

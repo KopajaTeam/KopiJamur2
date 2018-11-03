@@ -34,15 +34,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<h2 class="entry-title"><a href="#" rel="bookmark"><?php echo $forum->judul; ?></a></h2>
 										</header><!-- .entry-header -->
 										<div class="entry-meta">
-											<span class="posted-on"><a href="#" rel="bookmark"><span class="entry-date published updated"><?php echo "Tanggal"; ?></span></a>
+											<span class="posted-on"><a href="#" rel="bookmark"><span class="entry-date published updated"><?php echo $forum->tanggal; ?></span></a>
 										</span>
 										<span class="byline"><span class="author vcard"><a href="#" >Supervisor</a></span></span>
 										<span class="comments-link"><a href="#" >Leave a comment</a></span>
-										<span class="cat-links"><a href="#"  rel="category tag">Design</a></span>
+										<span class="cat-links"><a href="#"  rel="category tag"><?php echo $forum->nama_kategori; ?></a></span>
 									</div><!-- .entry-meta -->
 									<div class="entry-content">
 										<p>
-											<?php echo "isi konten"; ?>
+											<?php echo $forum->isi_forum; ?>
 										</p>
 									</div><!-- .entry-content -->
 								</div><!-- .entry-content-wrapper -->
@@ -57,11 +57,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="author-info">
 									<h4 class="author-header">
 										Written by&nbsp;<a href="#" title="Posts by Director & Writer: Kopaja Team" rel="author">
-											<?php echo "nama penulis"; ?>
+											<?php echo $forum->nama; ?>
 										</a>   </h4>
 										<div class="author-content">
 											<p>
-												<?php echo "deskripsi penulis"; ?>
+												<?php echo $forum->profiluser; ?>
 											</p>
 										</div>
 									</div> <!-- .author-info -->
@@ -85,7 +85,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												<footer class="comment-meta">
 													<div class="comment-author vcard">
 														<img alt="Author" src="<?php echo base_url('assets/images/blog-single')?>/author-2.jpg" class="avatar img-circle">
-														<b class="fn"><a href="#"  class="url"><?php echo "user"; ?></a></b>
+														<b class="fn"><a href="#"  class="url"><?php echo $forum->nama; ?></a></b>
 														<span class="says">says:</span>
 														<div class="reply">
 															<a  class="comment-reply-link" href="#">Reply</a>

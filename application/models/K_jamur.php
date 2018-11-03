@@ -1,7 +1,7 @@
 <?php
 /**
- *
- */
+*
+*/
 class K_jamur extends CI_Model
 {
 	public function select($table){
@@ -29,6 +29,10 @@ class K_jamur extends CI_Model
 		return $this->db->get_where($table,$where);
 	}
 
+	public function detailforum(){
+//ambil data FORUM dari table forum
+		$forum = $this->db->get('forum');
+		return $forum;
+	}
 }
-
- ?>
+?>

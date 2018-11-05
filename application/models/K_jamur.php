@@ -36,5 +36,11 @@ class K_jamur extends CI_Model
 		$this->db->where('id_forum', $id_forum);
 		return $this->db->get('forum');
 	}
+	public function reply($id_reply){
+		$this->db->join('user','reply_forum.id_user = user.id_user',"LEFT");
+		$this->db->join('forum,reply_forum.id_forum = forum.id_forum',"LEFT");
+		$this->db->where('id_reply', $id_reply);
+		$this->db->get('reply_forum');
+	}
 }
 ?>

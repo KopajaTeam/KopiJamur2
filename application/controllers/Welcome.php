@@ -22,12 +22,12 @@ class Welcome extends CI_Controller {
 		function testi(){
 			$this->load->view('menu/testimonial');
 		}
-		function forum(){
-			$this->load->view('menu/forum');
-		}
-		function detform(){
-			$this->load->view('menu/detailforum');
-		}
+		//function forum(){
+		//	$this->load->view('menu/forum');
+		//}
+//		function detform(){
+		//	$this->load->view('menu/detailforum');
+//		}
 		function produk(){
 			$this->load->view('menu/product');
 		}

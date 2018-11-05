@@ -92,8 +92,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 														</div>
 													</div><!-- .comment-author -->
 													<div class="comment-metadata">
-														<a href="#" >
-															<span> <?php echo "tanggal komentar"; ?></span>
+														<a href="#">
+															<span><?php echo $forum ->tanggal; ?></span>
 														</a>
 													</div><!-- .comment-metadata -->
 												</footer><!-- .comment-meta -->
